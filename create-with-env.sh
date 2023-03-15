@@ -10,7 +10,7 @@ if [ "$1" == "dev" -o "$1" == "prod" ]; then
 else
   echo "Env name dev or prod is needed"
   exit 1
-fi 
+fi
 
 create_ec2() {
   PRIVATE_IP=$(aws ec2 run-instances \
